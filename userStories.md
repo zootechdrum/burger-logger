@@ -50,17 +50,6 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 
 
-
-
-4. Create a server.js file.
-
-5. Install the Handlebars npm package: `npm install express-handlebars`.
-
-6. Install MySQL npm package: `npm install mysql`.
-
-7. Require the following npm packages inside of the server.js file:
-   * express
-
 #### DB Setup
 
 1. Inside your `burger` directory, create a folder named `db`.
@@ -153,45 +142,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
      * Create a button in `index.handlebars` that will submit the user input into the database.
 
-#### Directory structure
 
-All the recommended files and directories from the steps above should look like the following structure:
-
-```
-.
-├── config
-│   ├── connection.js
-│   └── orm.js
-│ 
-├── controllers
-│   └── burgers_controller.js
-│
-├── db
-│   ├── schema.sql
-│   └── seeds.sql
-│
-├── models
-│   └── burger.js
-│ 
-├── node_modules
-│ 
-├── package.json
-│
-├── public
-│   └── assets
-│       ├── css
-│       │   └── burger_style.css
-│       └── img
-│           └── burger.png
-│   
-│
-├── server.js
-│
-└── views
-    ├── index.handlebars
-    └── layouts
-        └── main.handlebars
-```
 
 ### Reminder: Submission on BCS
 
