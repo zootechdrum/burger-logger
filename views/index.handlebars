@@ -30,9 +30,9 @@
 </ul>
 
 <ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
+    {{#each burger}}
+    {{#if devoured}}
+        {{> burgers/burger-block}}
+        {{/if}}
+    {{/each}}
 </ul>
