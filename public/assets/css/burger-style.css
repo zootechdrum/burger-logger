@@ -17,6 +17,8 @@ body{
     list-style: none;
     border-radius: 15px;
     padding: 5px;
+    padding: 15px 0 15px 0;
+    max-width:350px;
 }
 
 .delete-burger{
@@ -49,5 +51,4 @@ body{
 
 .burger-header{
     letter-spacing: 2px;
-    padding-left:25px;
 }
