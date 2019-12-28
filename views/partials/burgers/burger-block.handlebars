@@ -1,11 +1,11 @@
-<li>
+<li class="indi-burger text-center">
 	{{burger_name}}
 	<div>
-	<button class="change-sleep btn btn-success" data-id="{{id}}" data-newsleep="{{sleep}}">
+	<button class="statusOfBurger btn" data-id="{{id}}" data-newsleep="{{sleep}}">
 		{{#if devoured}}Eaten{{else}}Devour It!{{/if}}
 	</button>
 
-	<button class="delete-burger btn btn-danger" data-id="{{this.id}}">DELETE BURGER</button>
+	<button class="delete-burger btn" data-id="{{this.id}}">DELETE BURGER</button>
 	</div>
 
 </li>
