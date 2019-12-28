@@ -12,7 +12,7 @@ body{
 }
 
 .indi-burger{
-    background-color: black;
+    background-color: #000;
     margin-top:5px;
     list-style: none;
     border-radius: 15px;
@@ -20,6 +20,25 @@ body{
 }
 
 .delete-burger{
-    border:  1px solid red;
+    border:  1px solid #C38D9E;
     color: white;
+}
+
+.devoured{
+    color:lightgray;
+    border: 1px solid gray;
+    cursor: text;;
+}
+
+.not-devoured:hover{
+    color: #41B3A3 !important;
+}
+
+.not-devoured{
+    border: 1px solid #41B3A3;
+    color:white;
+}
+
+.btn:hover{
+    color:white;
 }

@@ -1,7 +1,9 @@
 <li class="indi-burger text-center">
 	{{burger_name}}
 	<div>
-	<button class="statusOfBurger btn" data-id="{{id}}" data-newsleep="{{sleep}}">
+	<button {{#if devoured}} class="statusOfBurger btn devoured" disabled{{else}}
+	class="statusOfBurger btn not-devoured"
+	{{/if}} data-id="{{id}}" data-newsleep="{{sleep}}">
 		{{#if devoured}}Eaten{{else}}Devour It!{{/if}}
 	</button>
 
