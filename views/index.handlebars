@@ -20,28 +20,29 @@
         </div>
     </div>
     <section class="burgersStat">
-    <div class="row">
-        <div class="col">
-            <ul>
-                {{#each burger}} 
-                {{#unless devoured}} 
-                {{> burgers/burger-block}} 
-                {{/unless}} 
-                {{/each}}
-            </ul>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <header class="text-center burger-header">
+                        <h2>Burgers To Eat</h2>
+                    </header>
+                    <ul>
+                        {{#each burger}} {{#unless devoured}} {{> burgers/burger-block}} {{/unless}} {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+            <div>
+                <header class="text-center burger-header">
+                   <h2>Burgers Eaten</h2> 
+                </header>
+
+                <ul>
+                    {{#each burger}} {{#if devoured}} {{> burgers/burger-block}} {{/if}} {{/each}}
+                </ul>
+            </div>
+            </div>
         </div>
-        <div class="col">
-            <ul>
-                {{#each burger}} 
-                {{#if devoured}} 
-                {{> burgers/burger-block}} 
-                {{/if}}
-                {{/each}}
-            </ul>
-        </div>
-    </div>
     </section>
 
 </div>
-
-
