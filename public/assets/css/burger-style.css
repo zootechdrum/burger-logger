@@ -52,3 +52,13 @@ body{
 .burger-header{
     letter-spacing: 2px;
 }
+
+header > h2 {
+    padding-bottom:7px;
+    border-bottom: 5px solid white;
+}
+
+ul{
+    margin:auto;
+    width: 400px;
+}
