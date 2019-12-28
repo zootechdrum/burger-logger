@@ -13,7 +13,7 @@ body{
 
 .indi-burger{
     background-color: #000;
-    margin-top:5px;
+    margin-top:8px;
     list-style: none;
     border-radius: 15px;
     padding: 5px;
@@ -61,4 +61,9 @@ header > h2 {
 ul{
     margin:auto;
     width: 400px;
+    margin-top:20px;
+}
+
+.btn-sub{
+    background: color #85dCB0;
 }
