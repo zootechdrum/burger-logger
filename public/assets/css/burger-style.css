@@ -53,6 +53,11 @@ body{
     letter-spacing: 2px;
 }
 
+.burger-img{
+    height: 400px;
+    width:400px;
+}
+
 header > h2 {
     padding-bottom:7px;
     border-bottom: 5px solid white;

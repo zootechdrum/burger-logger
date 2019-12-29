@@ -3,7 +3,7 @@
 	<div>
 	<button {{#if devoured}} class="statusOfBurger btn devoured" disabled{{else}}
 	class="statusOfBurger btn not-devoured"
-	{{/if}} data-id="{{id}}" data-newsleep="{{sleep}}">
+	{{/if}} data-id="{{id}}" data-devouredState="{{devoured}}">
 		{{#if devoured}}Eaten{{else}}Devour It!{{/if}}
 	</button>
 
