@@ -16,17 +16,17 @@ $(document).ready(function () {
 
       $("#burger").val("")
   
-      // Send the POST request.
-      // $.ajax("/api/cats", {
-      //   type: "POST",
-      //   data: newCat
-      // }).then(
-      //   function() {
-      //     console.log("created new cat");
-      //     // Reload the page to get the updated list
-      //     location.reload();
-      //   }
-      // );
+      //Send the POST request.
+      $.ajax("/api/burger", {
+        type: "POST",
+        data: newBurger
+      }).then(
+        function() {
+          console.log("created new Burger");
+          // Reload the page to get the updated list
+          location.reload();
+        }
+      );
     });
 
   
