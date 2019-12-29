@@ -58,6 +58,10 @@ body{
     width:400px;
 }
 
+header > h1 {
+    letter-spacing: 2px;
+}
+
 header > h2 {
     padding-bottom:7px;
     border-bottom: 5px solid white;

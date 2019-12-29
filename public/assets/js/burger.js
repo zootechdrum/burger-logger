@@ -31,6 +31,8 @@ $(document).ready(function () {
     });
 
     $(".burger-form").on("submit", function(event) {
+
+      event.preventDefault()
       // Make sure to preventDefault on a submit event.
       var newBurger = {
         name: $("#burger").val().trim()
@@ -43,13 +45,17 @@ $(document).ready(function () {
         type: "POST",
         data: newBurger
       }).then(
-        function() {
-          console.log("created new Burger");
+        function(data) {
+          console.log(data);
+        })
+        
+
+
           // Reload the page to get the updated list
-          location.reload();
+          // location.reload();
         }
       );
-    });
+    
 
   
 
