@@ -10,7 +10,8 @@ $(document).ready(function () {
 //Changes state of Burger 
     $(".statusOfBurger").on("click", function(event) {
       var id = $(this).data("id");
-      var burgerState = $(this).data("devouredState");
+      var burgerState = $(this).data("eaten");
+      console.log(burgerState)
   
       var newBurgerState = {
         burgerState: burgerState
@@ -22,7 +23,7 @@ $(document).ready(function () {
         data: newBurgerState
       }).then(
         function() {
-          console.log("changed sleep to", newSleep);
+          console.log("changed sleep to", newBurgerState);
           // Reload the page to get the updated list
           location.reload();
         }

@@ -40,11 +40,13 @@ router.delete("/api/burger/:id", function(req, res) {
 router.put("/api/burger/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
 
-  cat.update(
+  console.log("condition", condition);
+  console.log(req.body.burgerState + " this is burgerStatte")
+
+  burger.update(
     {
-      burgerState: req.body.burgerState
+      devoured: req.body.burgerState
     },
     condition,
     function(result) {

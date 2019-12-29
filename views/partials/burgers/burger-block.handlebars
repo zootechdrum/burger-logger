@@ -1,9 +1,9 @@
 <li class="indi-burger text-center">
 	{{burger_name}}
 	<div>
-	<button {{#if devoured}} class="statusOfBurger btn devoured" disabled{{else}}
-	class="statusOfBurger btn not-devoured"
-	{{/if}} data-id="{{id}}" data-devouredState="{{devoured}}">
+	<button  data-id="{{id}}" data-eaten="{{eaten}}" {{#if devoured}} class="statusOfBurger btn devoured" data-devouredState="{{devoured}}" disabled{{else}}
+	class="statusOfBurger btn not-devoured"  
+	{{/if}}>
 		{{#if devoured}}Eaten{{else}}Devour It!{{/if}}
 	</button>
 
