@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+//Below functions hide elements after initial delete
     function cuteHide(el) {
       el.animate({opacity: '0'}, 150, function(){
         el.animate({height: '0px'}, 150, function(){
@@ -7,6 +7,31 @@ $(document).ready(function () {
         });
       });
     }
+
+    $(".burger-form").on("submit", function(event) {
+      // Make sure to preventDefault on a submit event.
+      var newBurger = {
+        name: $("#burger").val().trim()
+      };
+
+      $("#burger").val("")
+  
+      // Send the POST request.
+      // $.ajax("/api/cats", {
+      //   type: "POST",
+      //   data: newCat
+      // }).then(
+      //   function() {
+      //     console.log("created new cat");
+      //     // Reload the page to get the updated list
+      //     location.reload();
+      //   }
+      // );
+    });
+
+  
+
+//Event Handler when Delete button is pressed
 $(".delete-burger").on("click", function(event) {
     var id = $(this).data("id");
   
@@ -14,17 +39,16 @@ $(".delete-burger").on("click", function(event) {
       var el = $(this).closest('.indi-burger');
       cuteHide(el);
     });
-  })
-    // Send the DELETE request.
-  //   $.ajax("/api/burger/" + id, {
-  //     type: "DELETE"
-  //   }).then(
-  //     function() {
-  //       // Reload the page to get the updated list
-  //       setTimeout(function(){location.reload(); }, 2000);
-  //     }
-  //   );
-  // });
+    //Send the DELETE request.
+    $.ajax("/api/burger/" + id, {
+      type: "DELETE"
+    }).then(
+      function() {
+        //Wait to  reload the page to get the updated list
+        setTimeout(function(){location.reload(); }, 2000);
+      }
+    );
+  });
 });
 
 
