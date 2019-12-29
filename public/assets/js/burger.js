@@ -7,6 +7,27 @@ $(document).ready(function () {
         });
       });
     }
+//Changes state of Burger 
+    $(".statusOfBurger").on("click", function(event) {
+      var id = $(this).data("id");
+      var burgerState = $(this).data("devouredState");
+  
+      var newBurgerState = {
+        burgerState: burgerState
+      };
+  
+      // Send the PUT request.
+      $.ajax("/api/cats/" + id, {
+        type: "PUT",
+        data: newBurgerState
+      }).then(
+        function() {
+          console.log("changed sleep to", newSleep);
+          // Reload the page to get the updated list
+          location.reload();
+        }
+      );
+    });
 
     $(".burger-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
