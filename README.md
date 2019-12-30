@@ -20,8 +20,8 @@ In this assignment, I created a burger logger with MySQL, Node, Express, Handleb
 
 ### Code Snippet
 
-The code below uses the handlebars templating engine to conditiona render <li> items 
-to our index file. Depending on their condition in the database different classes and text is applied to the <li> items.
+The code below uses the handlebars templating engine to conditionaly render list items 
+to our index file. Depending on their condition in the database different classes and text is applied to the list items.
 
 ```HTML
 <li class="indi-burger text-center">
