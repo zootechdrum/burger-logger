@@ -16,4 +16,4 @@ In this assignment, I created a burger logger with MySQL, Node, Express, Handleb
 
 
 # Application in Action
-![working-app-giphy](.public/assets/img/eat-da-burger.gif)
+![working-app-giphy](public/assets/img/eat-da-burger.gif)
