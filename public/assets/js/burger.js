@@ -38,7 +38,7 @@ $(document).ready(function () {
         name: $("#burger").val().trim()
       };
 
-      $("#burger").val("")
+      
   
       //Send the POST request.
       $.ajax("/api/burger", {
@@ -46,13 +46,9 @@ $(document).ready(function () {
         data: newBurger
       }).then(
         function(data) {
-          console.log(data);
+          $("#burger").val("")
         })
-        
-
-
-          // Reload the page to get the updated list
-          // location.reload();
+        location.reload();
         }
       );
     
